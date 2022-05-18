@@ -1,0 +1,52 @@
+nav {
+    font-family: Transformers;
+    position: fixed;
+    background-color: #F22727;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+
+
+nav {
+    
+    
+    background-color: #F22727;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+#A{
+    font-family: Transformers;
+
+    background-color: #010440;
+}

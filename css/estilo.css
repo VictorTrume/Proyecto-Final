@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Transformers;
+    src: url(../Fonts/Transformers\ Movie.ttf);
+}
+
+@font-face {
+    font-family:Koulen-Regular;
+    src: url(../Fonts/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family:Bebas Neue;
+    src: url(../Fonts/BebasNeue-Regular.ttf);
+}
+
+
+.slides {
+    padding: 0;
+    width: 100%;  height: 90%;
+    display: block;  margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container {display: block; }
+
+.slide{
+    top: 0;
+    opacity: 0;
+    width: 100%; height: 100%;
+    display: block; position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 400px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next {right: 0; }
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label{ display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0 , 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+
+
+nav {
+    
+    font-family: Transformers;
+    background-color: #F22727;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  
+ 
+    border-bottom: 5px solid black;
+ 
+    
+}
+.texto{
+    width: 100%;
+    margin: 25px; opacity: 0.9;
+    border: 0px solid rgb(255, 255, 255);
+
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0,5s ease-out;
+
+    -webkit-box-reflect: below 0px -webkit-gradient (linear, left top, left bottom, from(transparent), color-stop(.7, transparent),to(rgba(0,0,0,0.1)));
+}
+
+.texto:hover{
+opacity: 10;
+-webkit-box-reflect: below 0px -webkit-gradient (linear, left top, left bottom, from(transparent), color-stop(.7, transparent),to(rgba(0,0,0,0.1)));
+-webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+-moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+.h1{
+    font-family: Transformers;
+}
+
+#A{
+    background-color: #000000;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    color: #ffffff;
+    font-family: Koulen-Regular;
+}
+
+#A h2{
+    font-family: Transformers;
+}
+
+#D{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#D h1{
+    font-family: Transformers;
+}
+
+
+footer{
+    background-color: #F28322;
+    
+    color: white;
+ 
+    font-family: Transformers;
+
+  
+
+    border-top: 5px solid black;
+
+    padding-left: 2em;
+
+}
+
+.diecisies {
+    transition: transform .2s; 
+}
+ 
+.diecisies:hover {
+    transform: scale(1.5); 
+}
+

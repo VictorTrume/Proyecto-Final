@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Formulario de Contacto</title>
+        <link href="formulario/colores.css" rel="stylesheet" /> 
+    </head>
+    
+    <body background="imagenes/4.png" ></body>
+    <nav>
+        
+        <a href="Pagina principal.html"> <img src="../imagenes/1.png" /> </a>
+        <ul>
+            <li><a href="Articulos.html">Continuidades</a></li>
+            <li><a href="mejoras.html">Ayuda a mejorar el contenido!</a></li>
+            
+        </div>
+        </ul>
+    </nav>
+    
+<br>
+<br>
+<br>
+<br>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--FRONT END-->
+        <h2>Que nos recomiendas?</h2>
+
+        <form class="mejoras" action="formulario/guardar.php" method="POST" id="contact_form" runat="server" enctype="multipart/form-data">
+
+           
+              
+           <h4>Recomendacion de temas</h4>
+           <select type="text" size"30 char" name="RC">
+               <option value="">---------</option>
+               <option value="RC">Car Robots</option>
+               <option value="RC">Universo de Bumblebee(movie)</option>
+               <option value="RC">RID (2015)</option>
+               <option value="RC">Beast Wars II / Beast Wars Neo</option>
+               <option value="RC"> Comics (Marvel)</option>
+               <option value="RC"> Comics (IDW)</option>
+               <option value="RC"> Crossovers</option>
+        
+           </select>
+
+<br>
+<br>
+            <label for="Pp">Problemas con la pagina</label><br>
+            <input type="text" id="Pp" name="Pp" maxlenght="60"required  pattern="[a-z]{4,25}" ><br><br>
+
+
+           <button class="submit" type="submit">Enviar Registro</button>
+        </form>
+        
+    </body>
+</html>
